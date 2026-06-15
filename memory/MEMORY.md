@@ -7,3 +7,5 @@
 - [exp-windows-crlf-js-strings](exp-windows-crlf-js-strings.md) — Windows下修改HTML时JS字符串中的\n变真实换行符
 - [exp-python-edit-html-pitfalls](exp-python-edit-html-pitfalls.md) — Python修改HTML的常见坑：匹配失败、引号冲突、编码问题
 - [exp-whea-bsod-diagnosis](exp-whea-bsod-diagnosis.md) — HP笔记本 WHEA 0x124 蓝屏诊断流程：事件日志解码MCi_STATUS定位硬件根因
+- [coaching-strategy](coaching-strategy.md) — 引导策略：实战导向、项目驱动、目标AI应用开发者
+- [cognitive-analysis-rule](cognitive-analysis-rule.md) — 认知分析规则：有新发现才发，没有就跳过
