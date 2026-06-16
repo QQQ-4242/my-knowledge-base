@@ -16,4 +16,3 @@
 - [exp-windows-crlf-js-strings](exp-windows-crlf-js-strings.md) — Windows修改HTML时JS字符串中的\n变真实换行符
 - [exp-python-edit-html-pitfalls](exp-python-edit-html-pitfalls.md) — Python修改HTML的常见坑
 - [exp-whea-bsod-diagnosis](exp-whea-bsod-diagnosis.md) — HP笔记本WHEA蓝屏诊断
-- [exp-hp-laptop-fn-keys](exp-hp-laptop-fn-keys.md) — HP笔记本Fn键说明
