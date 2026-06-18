@@ -6,7 +6,6 @@
 - [user-profile](user-profile.md) — 用户画像：背景、能力、认知侧写、情绪模式、对话禁忌
 - [project-a-progress](project-a-progress.md) — 方案A工程量汇总器进度
 - [novel-writer-project](novel-writer-project.md) — 小说写作工坊 v1.0，GitHub 开源
-- [project-boq-checker](project-boq-checker.md) — BOQ检查skill：/check-boq，基于GB50500检查漏项/漏填，阻塞在PDF不可读
 
 ## 经验库
 - [exp-bash-windows-path](exp-bash-windows-path.md) — Bash 使用 Unix 路径 /c/... 而非 C:\...
