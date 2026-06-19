@@ -1,38 +1,37 @@
 ---
 name: project-a-progress
-description: 方案A项目（工程量自动汇总器）当前进度
+description: 方案A项目（工程量清单检查器）当前进度 — 2026-06-19 更新
 metadata: 
   node_type: memory
   type: project
   originSessionId: 04a4377e-ffe0-4c25-922b-8a0132f02c97
 ---
 
-# 方案 A 项目进度
+# 方案 A 项目进度（更新至 2026-06-19）
 
 ## 已完成
-- [x] 环境搭建：Python + pandas + openpyxl + streamlit + requests
-- [x] hello.py 逐行理解
-- [x] create_excel.py / read_excel.py（分组+筛选+汇总）
-- [x] ai_text.py（剪贴板读取 → DeepSeek 结构化 → Excel）
-- [x] easyocr 测试完毕（质量差，已弃用）
-- [x] app.py 网页版（上传 Excel + AI 识别 双标签）
-- [x] 全链路验证通过（微信OCR→DeepSeek→Excel）
+- [x] 环境搭建：Python + pandas + streamlit + SQLite
+- [x] 数据库：9本国标清单规范(2013版) + 3本定额，共约9000条规则
+- [x] 引擎四层检查：L0格式、L2特征/单位、L3依赖规则(31条)
+- [x] 31条依赖规则：施工标准19条 + 现场经验9条 + 法院判例2条 + 逻辑1条
+- [x] Web：两个标签(AI识别 + 规范检查)，三个检查按钮(特征/单位/漏项)
+- [x] 专业筛选：14个勾选框(土方/砌体/混凝土/钢筋/金属/门窗/防水/保温/楼地面/墙柱面/天棚/涂料/其他装饰/措施)
+- [x] 筛选器：类型(清单/定额/全部) + 版本(2013/2024) + 地区(四川/全国...)
+- [x] 自动修正：特征检查直接填入单元格，漏项检查追加缺失行
+- [x] 准确率验证：测试BOQ 10个错误检出9个(90%)
+- [x] 2013版规范正确匹配(平整场地=m²)
 
-## 当前状态（2026-06-18）
-- ✅ ai_text.py 命令行版：可用，支持剪贴板/文件/直接传参
-- ✅ app.py 网页版：跑在 http://localhost:8501
-- ❌ easyocr：已弃用（识别率太低）
-- ⏳ DeepSeek 图片 API：灰度中，未开放
+## 待做
+- [ ] L4 数量逻辑：回填≤挖方、钢筋/混凝土比值、屋面面积校验
+- [ ] 特征检查从"是否为空"升级到"是否完整"(Row2漏检问题)
+- [ ] Excel插件版探索
+- [ ] 定额套用检查逻辑
 
-## 当前工作流
-```
-微信截图/照片 → 微信OCR提取文字 → 复制 → app.py粘贴 → DeepSeek → Excel
-```
+## 文件位置
+- 网页：D:\project-a\app.py（localhost:8501）
+- 数据库：D:\project-a\rules\boq_checker.db
+- 引擎：D:\project-a\rules\engine.py
+- 规则库：D:\project-a\rules\data\
 
-## 下一步
-1. 用真实 BOQ 测试完整流程
-2. 改进 app.py UI
-3. DeepSeek 图片 API 开放后直接上传图片
-
-## 相关记忆
-- [[user-profile]]
+**Why:** 下次继续时直接接上
+**How to apply:** 读此文件了解进度，从L4开始
