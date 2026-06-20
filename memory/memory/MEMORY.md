@@ -13,6 +13,7 @@
 - [exp-python-edit-html-pitfalls](exp-python-edit-html-pitfalls.md) — Python修改HTML的常见坑
 - [exp-whea-bsod-diagnosis](exp-whea-bsod-diagnosis.md) — HP笔记本WHEA蓝屏诊断
 - [exp-separate-think-from-edit](exp-separate-think-from-edit.md) — 表达和想法分开：先倒出来再修改，最多两遍就发
+- [exp-streamlit-dom-download-button](exp-streamlit-dom-download-button.md) — Streamlit 1.58 st.download_button 触发 DOM removeChild 错误的根因和修复
 - [exp-lock-version-first](exp-lock-version-first.md) — 做项目先锁定数据源版本，否则引擎全盘白做
 
 ## 工具
