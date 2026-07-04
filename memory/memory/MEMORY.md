@@ -18,3 +18,4 @@
 
 ## 工具
 - [analyze-skill](analyze-skill.md) — /analyze 命令：分析本轮对话的逻辑/性格/配合，询问是否保存
+- [session-resume](session-resume.md) — 会话恢复文件：每次对话结束写入，新会话自动读取
